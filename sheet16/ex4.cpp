@@ -37,5 +37,4 @@ int main(){
 	}
 	
 	cout << "Min: " << min_num << "\nMax: " << max_num<< endl;
-	cout <<min(num[0], num[1]);
 }
