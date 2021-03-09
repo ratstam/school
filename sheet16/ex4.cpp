@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iterator>
 using namespace std;
 
 double min (double x, double y){
@@ -24,16 +25,14 @@ int main(){
 		cin >> num[i];
 	}
 
-	min_num = min(num[1], num[2])
-	for (int i = 3; i < num.size; i++)
-	{
-		min_num = min(min_num, num[i])
+	min_num = min(num[1], num[2]);
+	for (int i = 3; i < size(num); i++){
+		min_num = min(min_num, num[i]);
 	}
 
-	max_num = max(num[1], num[2])
-	for (int i = 3; i < num.size; i++)
-	{
-		max_num = max(max_num, num[i])
+	max_num = max(num[1], num[2]);
+	for (int i = 3; i < size(num); i++){
+		max_num = max(max_num, num[i]);
 	}
 	
 	cout << "Min: " << min_num << "\nMax: " << max_num;
