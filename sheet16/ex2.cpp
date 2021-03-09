@@ -9,11 +9,11 @@ int main(){
 		cin >> n;
 
 
-		repetitions[n]++
+		repetitions[n]++;
 	}while(n>=0 && n<=8);
 
 	cout << "\n Repetitions:" <<endl;
 	for(int i = 0; i <=8; i++){
-		cout << " Number " << i << " was repeated " << repetitions[i]<< " times\n"
+		cout << " Number " << i << " was repeated " << repetitions[i]<< " times\n";
 	}
 }
