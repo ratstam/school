@@ -26,7 +26,6 @@ bool brenchless_is_perfect(int k){
 }
 
 int main(){
-	
 	cout << brenchless_is_perfect(6);
-
+	system("pause");
 }
