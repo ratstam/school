@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iterator>
 using namespace std;
 
 double min (double x, double y){
