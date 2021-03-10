@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 bool is_perfect (int k){
 	int cont = 1, sum = 0;	
 
@@ -13,7 +16,7 @@ bool is_perfect (int k){
 
 
 bool brenchless_is_perfect(int k){
-	unsigned int cont = 1, unsigned sum = 0;
+	unsigned int cont = 1, sum = 0;
 	while(cont <= k/2){
 		sum += cont*(k%cont == 0);
 		cont ++;
@@ -24,6 +27,6 @@ bool brenchless_is_perfect(int k){
 
 int main(){
 	
-
+	cout << brenchless_is_perfect(6);
 
 }
