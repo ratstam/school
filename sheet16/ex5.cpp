@@ -2,7 +2,7 @@
 using namespace std;
 
 bool is_perfect (int k){
-	int cont = 1, sum = 0;	
+	unsigned int cont = 1, sum = 0;	
 
 
 	while(cont <= k/2){
@@ -16,7 +16,7 @@ bool is_perfect (int k){
 
 
 bool branchless_is_perfect(int k){
-	int cont = 1, sum = 0;
+	unsigned int cont = 1, sum = 0;
 	while(cont <= k/2){
 		sum += cont*(k%cont == 0);
 		cont ++;
@@ -28,7 +28,7 @@ bool branchless_is_perfect(int k){
 
 int main(){
 	while (true){
-		int n_max = 1;
+		unsigned int n_max = 1;
 
 		cout << "\nRange: ";
 		cin >> n_max;
