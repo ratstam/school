@@ -24,7 +24,8 @@ int main(){
 		if (!is_prime(p))
 		{
 			goOn = false;
-			cout << "The First non prime number is: " << p;
+			cout << i << "\n" << p;
+			cout << "\nThe First non prime number is: " << p << "\nand it is obtained through p(" << i << ")";
 		}
 		i++;
 	}
