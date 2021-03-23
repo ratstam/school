@@ -28,4 +28,5 @@ int main() {
 
 	for (int i = 1; i <= n_r; i++)
 		centerstring(c, n_c);
+	system("pause");
 }
