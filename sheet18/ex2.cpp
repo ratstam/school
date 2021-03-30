@@ -13,20 +13,16 @@ bool is_prime(int n){
 	return true;
 }
 
-int main(){
-	bool goOn = true;
-	int p = 0;
-	int i = 0;
+int p(int x){
+	return x*x + x + 41;
+}
 
-	while(goOn == true)
+int main(){
+	int k = 0;
+
+	while(is_prime(p(k)))
 	{
-		p = i*i + i +41;
-		if (!is_prime(p))
-		{
-			goOn = false;
-			cout << i << "\n" << p;
-			cout << "\nThe First non prime number is: " << p << "\nand it is obtained through p(" << i << ")";
-		}
-		i++;
+		k++;
 	}
+		cout << "\nThe First non prime number is: " << p(k) << "\nand it is obtained through p(" << k << ")";
 }

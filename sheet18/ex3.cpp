@@ -4,7 +4,7 @@ using namespace std;
  int reverse_integer (int n){
 	 int rev_n = 0;
 
-	 while (n > 0) {
+	 while (n != 0) {
         rev_n = rev_n * 10 + n % 10;
         n = n / 10;
     }
@@ -20,4 +20,4 @@ int main(){
 	reversed_n = reverse_integer(n);
 
 	cout << "\nResult: " << reversed_n;
-}
+	}
