@@ -21,6 +21,7 @@ bool is_prime(int n){
         n = n / 10;
     }
     return rev_n;
+ }
  
  int main(){
 	int n = 10001, cont = 0;
