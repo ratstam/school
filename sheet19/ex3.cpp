@@ -24,14 +24,22 @@ bool is_prime(int n){
  }
  
  int main(){
-	int n = 10001, cont = 0;
-	while(n<100000){
+	int n, n_start = 10000, n_end =100000, cont = 0;
+
+	cout << "Intervallo:";
+	cin >> n_start >> n_end;
+	n= n_start;
+
+	while(n<n_end){
 		if(is_prime(n) && n == reverse_integer(n)){
 			cout << n << " ";
-			if(cont%8==0)
-				cout << '\n';
 			cont++;
+			if(cont%8==0)
+				cout << '\n';	
 		}
 	n++;
+	}
+	if(cont == 0){
+		cout << "non sono stati trovato numeri primi palindromi in questo intervallo";
 	}
  }
