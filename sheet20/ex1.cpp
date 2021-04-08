@@ -12,5 +12,11 @@ string repeat(string str, int n){
 }
 
 int main(){
-	cout <<  repeat("ab", 3);
+	int n;
+	string s;
+	cout << "\nString:"
+	cin >> s;
+	cout << "\nTimes to repeat:"
+	cin >> n;
+	cout <<  repeat(s, n);
 }
