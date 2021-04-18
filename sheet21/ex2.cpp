@@ -17,7 +17,7 @@ int findLowest(int test1, int test2, int test3, int test4, int test5){
 }
 
 void calcAverage(int test1, int test2, int test3, int test4, int test5, double &avarage){
-	avarage = (test1 + test2 + test3 + test4 + test5 - findLowest(test1, test2, test3, test4, test5) )/4 ;
+	avarage = (test1 + test2 + test3 + test4 + test5 - findLowest(test1, test2, test3, test4, test5) )/4.0  ;
 }
 
 int main(){
