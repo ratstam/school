@@ -41,4 +41,4 @@ int main(){
 	for(int j = k-1; j >= 0; j--){
 		cout << n[j] << " ";
 	}
-}s
+}
